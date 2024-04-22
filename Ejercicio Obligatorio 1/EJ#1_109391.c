@@ -13,8 +13,7 @@
 
 
 double factorial(unsigned int n){
-	double f = sqrt(2*PI*n)*pow(n/(exp(1)), n);
-	return f;
+	return = sqrt(2*PI*n)*pow(n/(exp(1)), n);
 }
 
 
