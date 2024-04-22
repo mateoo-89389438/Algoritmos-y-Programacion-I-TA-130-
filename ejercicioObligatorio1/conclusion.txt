@@ -1,1 +1,0 @@
-Se puede ver que la aproximación es buena cerca del origen, pero en cuanto se empieza a alejar un poco se pierde muchísimo la similitud entre curvas. Esto depende directamente del numero de términos usados en la sumatoria, ya que a más términos mejor aproxima la curva. 
