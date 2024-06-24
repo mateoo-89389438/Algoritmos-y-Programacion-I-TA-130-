@@ -25,7 +25,19 @@ int popcnt(uint32_t n){
 }
 
 //c
+#define MASKB 0xFF // 1111 1111 
+#define SHIFTB 8
 
+uint32_t bextr(uint32_t a, uint16_t b) {
+	// Extraer la parte baja de b
+	uint8_t inicio = b & MASKB;
+	// Extraer la parte alta de b
+	uint8_t longitud = (b >> SHIFTB) & MASKB;
+
+	// Muevo a la derecha para dejar todos los bits deseados al inicio
+	// Muevo a la izquierda para obtener el resultado
+	return (a >> inicio) & ((1 << longitud) - 1);
+}
 
 //d. 
 uint32_t blsi(uint32_t n){
