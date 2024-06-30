@@ -5,7 +5,7 @@
 #define N 3
 #define MAX 100
 
-
+//EJ1
 void left_trim(char cadena[]){
     while (cadena[0] == ' '){
         for(size_t i = 0; cadena[i] != '\0'; i++){
@@ -15,6 +15,7 @@ void left_trim(char cadena[]){
 
 }
 
+//EJ2
 bool es_triangular_superior(size_t n, float matriz[][n]){
 
     for(size_t i = 0; i<n; i++){
@@ -28,9 +29,6 @@ bool es_triangular_superior(size_t n, float matriz[][n]){
     }
     return true;
 }
-
-
-
 
 
 
@@ -57,7 +55,7 @@ int main(){
 
     //EJ3
     char buffer[MAX];
-    printf("Dame un numero positivo para calcular la raiz cuadrada: ");
+    printf("Ingrese un numero positivo para calcular la raiz cuadrada: ");
     fgets(buffer, MAX, stdin);
     double x = atof(buffer);
 
