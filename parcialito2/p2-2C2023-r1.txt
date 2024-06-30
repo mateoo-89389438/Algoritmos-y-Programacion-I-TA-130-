@@ -1,0 +1,48 @@
+Algoritmos y Porgramación I (95.11) - Curso Santisi - 2do parcialito, 1er recuperatorio - 01/12/2023
+
+Resolver los siguientes problemas en forma clara y legible en código ISO-C99.
+
+	1. Un dispositivo de adquisicion de datos se comunica mediante protocolo I2C. Para realizar la transmición de un byte el
+	   mismo se enía en dos paquetes distintos, uno con su parte alta y otro con su parte baja. El paquete para la parte alta
+	   es 01000xxx donde xxx son los 3 bits más pesados del byte a transmitir, mientras que el paquete de la parte baja es
+	   011xxxxx donde xxxxx son los 5 bits más livianos del byte a transmitir.
+
+	   Por ejemplo si se quisiera transimitir el byte 10111001 se deberá codificar como los paquetes 01000101 y 01111001.
+
+	     a. Implementar la función uint8_t obtener_byte(uint8_t alta, uint8_t baja); que reciba la parte alta y la
+	     	  parte baja de una transmición y devuelva el byte recibido.
+
+	     b. Implementar la función void generar_byte(uint8_t byte, uint8_t *alta, uint8_t *baja); que reciba un byte a transmitir
+	     	  y devuelva la parte alta y baja de los paquetes a enviar.
+
+
+	2.   a. Implementar una función
+
+		  char **clonar_arreglo_cadenas(const char *ss[]);
+
+		  que reciba un arreglo de caracteres ss el cual contiene cadenas en sus primeras posiciones y el centinela
+		  NULL en su última posicion y que devuelva una copia en memoria nueva de dicho arreglo. 
+
+	     b. Implementar una función
+
+	        void destruir_arreglo_cadenas(char *ss[]);
+
+	        que reciba un arreglo dinámico de cadenas dinámicas como el del ítem anterior y libere la memoria asociada a él.
+
+	3. La función int rand(void); devuelve números aleatorios entre 0 y RAND_MAX. Se pide escribir una función int
+	   *generar_aleatorios(int max, size_t *n); que almacene en un vector y devuelva valores generados por la función
+	   rand() hasta que haya un valor mayor a max. En n se debe devolver el número de valores contenidos en el vector.
+
+¡Suerte! :)
+
+
+
+
+
+
+
+
+
+
+
+
