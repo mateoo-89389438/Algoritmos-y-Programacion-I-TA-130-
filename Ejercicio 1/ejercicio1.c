@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-
 #define PI 3.141592653589793
 
 #define INICIO -10
@@ -10,11 +9,8 @@
 
 #define N_MAX 10
 
-
-
 double factorial(unsigned int n){
-	return = sqrt(2*PI*n)*pow(n/(exp(1)), n);
-	
+	return = sqrt(2*PI*n)*pow(n/(exp(1)), n);	
 }
 
 
