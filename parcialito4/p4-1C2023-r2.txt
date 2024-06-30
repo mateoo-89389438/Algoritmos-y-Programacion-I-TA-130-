@@ -1,0 +1,39 @@
+
+
+1.  Teniendo un TDA lista enlazada de enteros definido como 
+    'typedef struct {struct nodo *prim;} lista_t;' y el nodo
+    'struct nodo {struct nodo *sig; int dato;};' implementar una primitiva
+
+        lista_t *lista_desde_vector(const int v[], size_t n);
+
+    que genere una lista a partir de los 'n' elementos de 'v'.
+
+    (Puede asumirse que existe la primitiva 'void lista_destruir(lista_t *l);'
+    para limpiar la lista en caso de falla durante su construcción.)
+
+
+2.  Se pide implementar una función
+
+        int arreglo_reducir(const int arreglo[], size_t n, int (*f)(int a, int b));
+
+    que reciba un 'arreglo' de 'n' enteros y le aplique, de a pares, la función
+    'f' a sus elementos y al resultado de la operación.
+
+    Si el arreglo tuviera sólo un elemento se debe devolver ese elemento, si
+    tuviera más de uno, el resultado se originará de la funcion 'f'.
+
+    Ejemplo, si el arreglo fuera '{1, 2, 4, 6}' y 'f' fuera la suma debe devolver 13;
+    en cambio si 'f' fuera el producto se deberia devolver 48.
+
+
+3.  Implementar una función 'float sumar_elementos(float v[], size_t n);' que 
+    utilizando recursividad calcule la suma de los elementos de un vector 'v' de 
+    'n' flotante.
+
+
+
+
+
+
+
+
