@@ -135,7 +135,7 @@ int main() {
 		}
 
 		// PING
-		else if ( pos == 0){
+		else if (pos == 0){
 
 			printf("PONG ");
 
@@ -148,7 +148,7 @@ int main() {
 		}
 		
 		//MENSAJE
-		else if(	pos == 1	){
+		else if(pos == 1){
 			extraer_campo(buffer2, buffer, 1); 
 			printf("%s: ", buffer2);
 			extraer_campo(buffer2, buffer, 2); 
@@ -157,7 +157,7 @@ int main() {
 		}
 
 		//SALUDAR
-		else if(	pos == 2	){
+		else if(pos == 2){
 			printf("Hola ");
 			extraer_campo(buffer2, buffer, 1); 
 			printf("%s! ", buffer2);
@@ -165,7 +165,7 @@ int main() {
 		}
 
 		//NOMBRE
-		else if(	pos == 3	){
+		else if(pos == 3){
 			printf("Bienvenido ");
 			extraer_campo(buffer2, buffer, 2); 
 			printf("%s, ", buffer2);
