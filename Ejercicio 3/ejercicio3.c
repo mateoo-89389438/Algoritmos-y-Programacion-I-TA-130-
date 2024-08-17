@@ -5,6 +5,7 @@
 #include <string.h>
 #include <ctype.h>
 
+
 #define MAX_LINEA 100
 
 typedef enum {
@@ -39,6 +40,8 @@ char *color_escape(color_t c) {
 	char * codigo = codigos_escape[c];
 	return codigo;
 }
+
+
 
 
 typedef struct {
@@ -101,12 +104,15 @@ terminal_t *terminal_crear(const char *prompt) {
 	return terminal;
 }
 
+
+
 void terminal_destruir(terminal_t *t){
 	free(t->historial);
 	// Restauración de la configuración original 
 	tcsetattr(0, TCSAFLUSH, &t->config_original); 
 	free(t);
 }
+
 
 
 int terminal_leer(terminal_t *t){
@@ -118,6 +124,8 @@ int terminal_leer(terminal_t *t){
 		return EOF;
 	}
 
+	
+	
 	// OP2: ENTER 
 	if (c == '\n') {
 
