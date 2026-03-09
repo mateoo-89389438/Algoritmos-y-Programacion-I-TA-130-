@@ -1,13 +1,10 @@
 #include <stdio.h>
 
+float Fahrenheit_to_C(float f){
+    return (f - 32)*5/9;
+}
+
 int main(){
-    float C;
-    
-    printf("Ingrese un valor en grado Celsius:\n");
-    scanf("%f", &C);
-    
-    float F = 9.0/5*C+32;
-    
-    printf("Su valor expresado en Farenheit es: %.2f\n", F);
+    printf("C = %.3f", Fahrenheit_to_C(-12.3456));
     return 0;
 }
