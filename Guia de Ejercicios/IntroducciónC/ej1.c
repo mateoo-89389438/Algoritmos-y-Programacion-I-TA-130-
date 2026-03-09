@@ -8,7 +8,7 @@ unsigned long monto_final(unsigned long c, int x, char n){
 }
 
 int main(){
-    printf("Su monto a pagar es: %lu :)\n", monto_final(100,118,1) );
+    printf("Su monto a pagar es: %lu \n", monto_final(100,118,1) );
     // el printf no es necesario, pero te muestra el valor del monto final calculado
     return 0;
 
