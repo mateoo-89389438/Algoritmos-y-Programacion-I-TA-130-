@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 float Fahrenheit_to_C(float f){
-    return (f - 32)*5/9;
+    return (f - 32)*5.0/9.0;
 }
 
 int main(){
